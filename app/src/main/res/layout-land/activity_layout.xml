@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#dbd9e4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#afd1b7"
+        android:gravity="center"
+        android:text="Hello welcome in magic square !"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:columnCount="5"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="47dp">
+        <!-- Line 1 waga layoutu świadczca o wielkości -->
+        <EditText
+            android:id="@+id/et11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/et12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/et13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+            android:id="@+id/sumLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:inputType="number"
+            android:text="10"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="submit"
+            android:text="Submit" />
+        <!-- Line 2 -->
+        <EditText
+            android:id="@+id/et21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/et22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/et23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+            android:id="@+id/sumLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:inputType="number"
+            android:text="10"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:enabled="false"
+            android:onClick="resume"
+            android:text="Resume" />
+        <!-- Line 3-->
+        <EditText
+            android:id="@+id/et31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/et32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/et33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <TextView
+            android:id="@+id/sumLine3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:inputType="number"
+            android:text="10"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:enabled="false"
+            android:onClick="newGame"
+            android:text="newGame" />
+        <!-- SunCOl-->
+        <TextView
+            android:id="@+id/suncol1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:inputType="number"
+            android:text="10"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/suncol2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:inputType="number"
+            android:text="10"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/suncol3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:inputType="number"
+            android:text="10"
+            android:textSize="20dp" />
+        <TextView/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="quit"
+            android:text="Quit" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ac1122"
+        android:gravity="center"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9b83f3"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et11" type="id" />
+    <item name="et12" type="id" />
+    <item name="et13" type="id" />
+    <item name="sumLine1" type="id" />
+    <item name="et21" type="id" />
+    <item name="et22" type="id" />
+    <item name="et23" type="id" />
+    <item name="sumLine2" type="id" />
+    <item name="et31" type="id" />
+    <item name="et32" type="id" />
+    <item name="et33" type="id" />
+    <item name="sumLine3" type="id" />
+    <item name="suncol1" type="id" />
+    <item name="suncol2" type="id" />
+    <item name="suncol3" type="id" />
+    <item name="btnNewGame" type="id" />
+    <item name="btnSubmit" type="id" />
+    <item name="btnResume" type="id" />
+    <item name="verify" type="id" />
+</resources>
