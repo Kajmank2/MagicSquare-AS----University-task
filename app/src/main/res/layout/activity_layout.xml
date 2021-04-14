@@ -20,9 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#ffff00"
-        android:columnCount="4"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="47dp">
+        android:columnCount="4">
         <!-- Line 1 waga layoutu świadczca o wielkości -->
         <EditText
             android:id="@+id/et11"
@@ -182,12 +180,18 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:background="#ac1122"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:columnCount="2">
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:onClick="submit"
+        android:background="@color/white"
         android:text="Submit" />
     <Button
         android:id="@+id/btnResume"
@@ -195,6 +199,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:enabled="false"
+        android:background="@color/white"
         android:onClick="resume"
         android:text="Resume" />
     <Button
@@ -204,6 +209,7 @@
         android:layout_margin="5dp"
         android:enabled="false"
         android:onClick="newGame"
+        android:background="@color/white"
         android:text="newGame" />
 
     <Button
@@ -212,7 +218,7 @@
         android:layout_margin="5dp"
         android:onClick="quit"
         android:text="Quit" />
-
+    </GridLayout>
     <Chronometer
         android:id="@+id/chronometer"
         android:layout_width="wrap_content"
@@ -221,5 +227,93 @@
         android:textColor="@color/white"
         android:textSize="30dp" />
 
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/lvl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level1"
+            android:text="Level1"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level2"
+            android:text="Level2"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level3"
+            android:text="Level3"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level4"
+            android:text="Level4"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level5"
+            android:text="Level5"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level6"
+            android:text="Level6"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level7"
+            android:text="Level7"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level8"
+            android:text="Level8"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level9"
+            android:text="Level9"
+            android:textSize="15dp" />
+
+    </GridLayout>
 
 </LinearLayout>

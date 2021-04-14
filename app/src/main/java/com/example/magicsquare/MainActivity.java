@@ -19,7 +19,7 @@ import java.util.Random;
     EditText et11,et12,et13,et21,et22,et23,et31,et32,et33;
     TextView suncol1,suncol2,suncol3,sumLine1,sumLine2,sumLine3,verify;
     int val11,val12,val13,val21,val22,val23,val31,val32,val33;
-    Button btnNewGame,btnSubmit,btnResume;
+    Button btnNewGame,btnSubmit,btnResume,Level1,Level2,Level3,Level4,Level5,Level6,Level7,Level8,Level9;
     Chronometer chronometer;
     Random alea;
     String state;
@@ -38,6 +38,18 @@ import java.util.Random;
         btnNewGame=findViewById(R.id.btnNewGame);
         btnResume=findViewById(R.id.btnResume);
         btnSubmit=findViewById(R.id.btnSubmit);
+        // btn level
+        Level1 = findViewById(R.id.lvl1);
+        Level2 = findViewById(R.id.lvl2);
+        Level3 = findViewById(R.id.lvl3);
+        Level4 = findViewById(R.id.lvl4);
+        Level5 = findViewById(R.id.lvl5);
+        Level6 = findViewById(R.id.lvl6);
+        Level7 = findViewById(R.id.lvl7);
+        Level8 = findViewById(R.id.lvl8);
+        Level9 = findViewById(R.id.lvl9);
+
+
         et11 = findViewById(R.id.et11);
         et12 = findViewById(R.id.et12);
         et13 = findViewById(R.id.et13);
@@ -66,7 +78,7 @@ import java.util.Random;
             int resultCol1 = Integer.parseInt(suncol1.getText().toString());
             int resultCol2  = Integer.parseInt(suncol2.getText().toString());
             int resultCol3  = Integer.parseInt(suncol3.getText().toString());
-            if (resultLine1==val11+val12+val13 & resultLine2==val21+val22+val23 & resultLine3==val31+val32+val33 & resultCol1==val21+val22+val32 & resultCol2==val12+val22+val32 & resultCol3==val13+val23+val33 )
+            if (resultLine1==val11+val12+val13 & resultLine2==val21+val22+val23 & resultLine3==val31+val32+val33 & resultCol1==val11+val21+val31 & resultCol2==val12+val22+val32 & resultCol3==val13+val23+val33 )
             {
                 verify.setText("Good, you reslove the magic square!");
                 btnNewGame.setEnabled(true);
@@ -237,4 +249,158 @@ import java.util.Random;
           state += currentState;
           Toast.makeText(this, currentState,Toast.LENGTH_LONG).show();//short window that is dissapera on the window
       }
-}
+
+
+      public void Level1(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+      }
+
+      public void Level2(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          Level1.setEnabled(false);
+      }
+
+      public void Level3(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+      }
+
+      public void Level4(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          et21.setText(String.format("%d",val21));
+          et21.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+          Level3.setEnabled(false);
+      }
+
+      public void Level5(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          et21.setText(String.format("%d",val21));
+          et21.setFocusable(false);
+          et22.setText(String.format("%d",val22));
+          et22.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+          Level3.setEnabled(false);
+          Level4.setEnabled(false);
+      }
+
+      public void Level6(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          et21.setText(String.format("%d",val21));
+          et21.setFocusable(false);
+          et22.setText(String.format("%d",val22));
+          et22.setFocusable(false);
+          et23.setText(String.format("%d",val23));
+          et23.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+          Level3.setEnabled(false);
+          Level4.setEnabled(false);
+          Level5.setEnabled(false);
+      }
+
+      public void Level7(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          et21.setText(String.format("%d",val21));
+          et21.setFocusable(false);
+          et22.setText(String.format("%d",val22));
+          et22.setFocusable(false);
+          et23.setText(String.format("%d",val23));
+          et23.setFocusable(false);
+          et31.setText(String.format("%d",val31));
+          et31.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+          Level3.setEnabled(false);
+          Level4.setEnabled(false);
+          Level5.setEnabled(false);
+          Level6.setEnabled(false);
+      }
+
+      public void Level8(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          et21.setText(String.format("%d",val21));
+          et21.setFocusable(false);
+          et22.setText(String.format("%d",val22));
+          et22.setFocusable(false);
+          et23.setText(String.format("%d",val23));
+          et23.setFocusable(false);
+          et31.setText(String.format("%d",val31));
+          et31.setFocusable(false);
+          et32.setText(String.format("%d",val32));
+          et32.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+          Level3.setEnabled(false);
+          Level4.setEnabled(false);
+          Level5.setEnabled(false);
+          Level6.setEnabled(false);
+          Level7.setEnabled(false);
+      }
+
+      public void Level9(View view) {
+          et11.setText(String.format("%d",val11));
+          et11.setFocusable(false);
+          et12.setText(String.format("%d",val12));
+          et12.setFocusable(false);
+          et13.setText(String.format("%d",val13));
+          et13.setFocusable(false);
+          et21.setText(String.format("%d",val21));
+          et21.setFocusable(false);
+          et22.setText(String.format("%d",val22));
+          et22.setFocusable(false);
+          et23.setText(String.format("%d",val23));
+          et23.setFocusable(false);
+          et31.setText(String.format("%d",val31));
+          et31.setFocusable(false);
+          et32.setText(String.format("%d",val32));
+          et32.setFocusable(false);
+          et33.setText(String.format("%d",val33));
+          et33.setFocusable(false);
+          Level1.setEnabled(false);
+          Level2.setEnabled(false);
+          Level3.setEnabled(false);
+          Level4.setEnabled(false);
+          Level5.setEnabled(false);
+          Level6.setEnabled(false);
+          Level7.setEnabled(false);
+          Level8.setEnabled(false);
+      }
+  }
