@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="left"
     android:background="#dbd9e4"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
@@ -15,14 +15,15 @@
         android:text="Hello welcome in magic square !"
         android:textColor="@color/white"
         android:textSize="20dp" />
-
+<GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="2">
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#ffff00"
-        android:columnCount="5"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="47dp">
+        android:columnCount="5">
         <!-- Line 1 waga layoutu świadczca o wielkości -->
         <EditText
             android:id="@+id/et11"
@@ -197,7 +198,94 @@
             android:onClick="quit"
             android:text="Quit" />
     </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:columnCount="3">
+        <Button
+            android:id="@+id/lvl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:enabled="false"
+            android:onClick="Level1"
+            android:text="Level1"
+            android:textSize="15dp" />
 
+        <Button
+            android:id="@+id/lvl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level2"
+            android:text="Level2"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level3"
+            android:text="Level3"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level4"
+            android:text="Level4"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level5"
+            android:text="Level5"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level6"
+            android:text="Level6"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level7"
+            android:text="Level7"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level8"
+            android:text="Level8"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/lvl9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="Level9"
+            android:text="Level9"
+            android:textSize="15dp" />
+    </GridLayout>
+</GridLayout>
     <TextView
         android:id="@+id/verify"
         android:layout_width="wrap_content"
@@ -207,7 +295,7 @@
         android:gravity="center"
         android:text="Verify"
         android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:textSize="60dp" />
 
     <Chronometer
         android:id="@+id/chronometer"
@@ -216,6 +304,5 @@
         android:background="#9b83f3"
         android:textColor="@color/white"
         android:textSize="30dp" />
-
 
 </LinearLayout>

@@ -78,7 +78,19 @@ import java.util.Random;
             int resultCol1 = Integer.parseInt(suncol1.getText().toString());
             int resultCol2  = Integer.parseInt(suncol2.getText().toString());
             int resultCol3  = Integer.parseInt(suncol3.getText().toString());
-            if (resultLine1==val11+val12+val13 & resultLine2==val21+val22+val23 & resultLine3==val31+val32+val33 & resultCol1==val11+val21+val31 & resultCol2==val12+val22+val32 & resultCol3==val13+val23+val33 )
+            ///////// ET to INT ///////////
+            int newval1 = Integer.parseInt( et11.getText().toString() );
+            int newval2 = Integer.parseInt( et12.getText().toString() );
+            int newval3 = Integer.parseInt( et13.getText().toString() );
+
+            int newval4 = Integer.parseInt( et21.getText().toString() );
+            int newval5 = Integer.parseInt( et22.getText().toString() );
+            int newval6 = Integer.parseInt( et23.getText().toString() );
+
+            int newval7 = Integer.parseInt( et31.getText().toString() );
+            int newval8 = Integer.parseInt( et32.getText().toString() );
+            int newval9 = Integer.parseInt( et33.getText().toString() );
+            if (resultLine1==newval1+newval2+newval3 & resultLine2==newval4+newval5+newval6 & resultLine3==newval7+newval8+newval9 & resultCol1==newval1+newval4+newval7 & resultCol2==newval2+newval5+newval8 & resultCol3==newval3+newval6+newval9 )
             {
                 verify.setText("Good, you reslove the magic square!");
                 btnNewGame.setEnabled(true);
@@ -110,7 +122,16 @@ import java.util.Random;
                     public void onClick(DialogInterface dialog, int id) {
                         init();
                         chronometer.setBase(SystemClock.elapsedRealtime());
-                        btnNewGame.setEnabled(true);
+                        btnNewGame.setEnabled(false);
+                        verify.setText("Verify");
+                        Level2.setEnabled(true);
+                        Level3.setEnabled(true);
+                        Level4.setEnabled(true);
+                        Level5.setEnabled(true);
+                        Level6.setEnabled(true);
+                        Level7.setEnabled(true);
+                        Level8.setEnabled(true);
+                        Level9.setEnabled(true);
                     }
                 });
 
@@ -259,8 +280,6 @@ import java.util.Random;
       public void Level2(View view) {
           et11.setText(String.format("%d",val11));
           et11.setFocusable(false);
-          et12.setText(String.format("%d",val12));
-          et12.setFocusable(false);
           Level1.setEnabled(false);
       }
 
@@ -269,8 +288,6 @@ import java.util.Random;
           et11.setFocusable(false);
           et12.setText(String.format("%d",val12));
           et12.setFocusable(false);
-          et13.setText(String.format("%d",val13));
-          et13.setFocusable(false);
           Level1.setEnabled(false);
           Level2.setEnabled(false);
       }
@@ -282,8 +299,6 @@ import java.util.Random;
           et12.setFocusable(false);
           et13.setText(String.format("%d",val13));
           et13.setFocusable(false);
-          et21.setText(String.format("%d",val21));
-          et21.setFocusable(false);
           Level1.setEnabled(false);
           Level2.setEnabled(false);
           Level3.setEnabled(false);
@@ -298,8 +313,6 @@ import java.util.Random;
           et13.setFocusable(false);
           et21.setText(String.format("%d",val21));
           et21.setFocusable(false);
-          et22.setText(String.format("%d",val22));
-          et22.setFocusable(false);
           Level1.setEnabled(false);
           Level2.setEnabled(false);
           Level3.setEnabled(false);
@@ -339,8 +352,6 @@ import java.util.Random;
           et22.setFocusable(false);
           et23.setText(String.format("%d",val23));
           et23.setFocusable(false);
-          et31.setText(String.format("%d",val31));
-          et31.setFocusable(false);
           Level1.setEnabled(false);
           Level2.setEnabled(false);
           Level3.setEnabled(false);
@@ -364,8 +375,6 @@ import java.util.Random;
           et23.setFocusable(false);
           et31.setText(String.format("%d",val31));
           et31.setFocusable(false);
-          et32.setText(String.format("%d",val32));
-          et32.setFocusable(false);
           Level1.setEnabled(false);
           Level2.setEnabled(false);
           Level3.setEnabled(false);
@@ -392,8 +401,6 @@ import java.util.Random;
           et31.setFocusable(false);
           et32.setText(String.format("%d",val32));
           et32.setFocusable(false);
-          et33.setText(String.format("%d",val33));
-          et33.setFocusable(false);
           Level1.setEnabled(false);
           Level2.setEnabled(false);
           Level3.setEnabled(false);
